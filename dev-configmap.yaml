@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dev-configmap
+data:
+  SSH: ‘false’ # boolean값으로 넣고자 할 때는 single quatation을 붙여줘야 함. 기본 string이기 때문
+  User: dev
