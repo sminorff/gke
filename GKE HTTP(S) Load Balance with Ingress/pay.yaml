@@ -13,7 +13,7 @@ spec:
         app: pay
     spec:
       containers:
-      - image: smlinux/pay
+      - image: gcr.io/epam-20181105/pay
         imagePullPolicy: IfNotPresent
         name: pay
         ports:
