@@ -14,7 +14,7 @@ spec:
         name: marvel
     spec:
       containers:
-      - image: gcr.io/epam-20181105/marvel
+      - image: gcr.io/epam-20181105/marvel:v1
         name: marvel-container
         ports:
         - containerPort: 80
