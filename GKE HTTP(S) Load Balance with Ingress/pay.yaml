@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pay
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: pay
+  template:
+    metadata:
+      labels:
+        app: pay
+    spec:
+      containers:
+      - image: smlinux/pay
+        imagePullPolicy: IfNotPresent
+        name: pay
+        ports:
+        - containerPort: 8080
+          protocol: TCP
